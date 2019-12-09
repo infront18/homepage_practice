@@ -1,0 +1,17 @@
+// 각 자료형의 크기
+
+#include <stdio.h>
+
+int main()
+{
+	printf("char = %d byte \n", sizeof(char));
+	printf("short = %d byte \n", sizeof(short));
+	printf("int = %d byte \n", sizeof(int));
+	printf("long = %d byte \n", sizeof(long));
+	printf("long long = %d byte \n", sizeof(long long));
+	printf("float = %d byte \n", sizeof(float));
+	printf("double = %d byte \n", sizeof(double));
+	printf("long double = %d byte \n", sizeof(long double));
+
+	return 0;
+}
