@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>test html</title>
+	<style type="text/css">
+		*{margin: 0; padding : 0;}
+		.wrap{
+			width: 500px;
+			margin: 0 auto;
+		}
+
+		.bt{
+			width: 100%;
+			height: 80px;
+			border-bottom: 1px solid black;
+			background-color: gray;
+			text-align: center;
+			line-height: 80px;
+			font-size: 30px;
+			cursor: pointer;
+		}
+
+		.list{
+			width: 100%;
+			height: 300px;
+			background-color: orange;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+		<div class="wrap">
+			<div class="bt1 bt">
+				menu1
+			</div>
+
+			<div class="list1 list">
+				
+			</div>
+
+			<div class="bt2 bt">
+				menu2
+			</div>
+
+			<div class="list2 list">
+				
+			</div>
+
+			<div class="bt3 bt">
+				menu3
+			</div>
+
+			<div class="list3 list">
+				
+			</div>
+
+			<div class="bt4 bt">
+				menu4
+			</div>
+
+			<div class="list4 list">
+				
+			</div>
+			
+		</div>
+
+		<script type = "text/javascript">
+            var t_bt = document.getElementsByClassName('bt');
+            var t_list = document.getElementsByClassName('list');
+
+            t_bt[0].addEventListener('click', function() {
+                all_hide();
+                t_list[0].style.display = "block";
+            });
+
+            t_bt[1].addEventListener('click', function() {
+                all_hide();
+                t_list[1].style.display = "block";
+            });
+
+            t_bt[2].addEventListener('click', function() {
+                all_hide();
+                t_list[2].style.display = "block";
+            });
+
+            t_bt[3].addEventListener('click', function() {
+                all_hide();
+                t_list[3].style.display = "block";
+            });
+
+            function all_hide()
+            {
+                t_list[0].style.display = "none";
+                t_list[1].style.display = "none";
+                t_list[2].style.display = "none";
+                t_list[3].style.display = "none";
+            }
+        </script>
+
+</body>
+</html>
